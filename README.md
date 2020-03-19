@@ -4,9 +4,9 @@ code release for ["Towards Discriminability and Diversity: Batch Nuclear-norm Ma
 ## One-sentence description
 We proved in the paper that Batch Nuclear-norm Maximization (BNM) could ensure the prediction discriminability and diversity, which is an effective conclusion under label insufficient situations.
 
-##Appilcation
+## Appilcation
 
-###Operation approach
+### Operation approach
 
 Assume `X` is the prediction matrix. We could calculate BNM loss in both Pytorch and Tensorflow, as follows:
  
@@ -26,8 +26,9 @@ L_BNM = -torch.sum(S)
 L_BNM = -tf.reduce_sum(tf.svd(X,compute_uv=False))
 ```
 
-###Tasks
+### Tasks
 We apply BNM to domain adaptation (DA) in [DA](DA), unsupervised open domain recognition (UODR) in [UODR](UODR) and semi-supervised learning (SSL) in [SSL](SSL).
+
 Training instructions for DA, UODR and SSL are in the `README.md` in [DA](DA), [UODR](UODR) and [SSL](SSL) respectively.
 
 ## Citation

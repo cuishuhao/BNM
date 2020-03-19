@@ -5,14 +5,14 @@ Dataset and pretrained models could be calculated and found in [UODTN](https://g
 
 While we directly take them.
 
-###Dataset
+### Dataset
 the source dataset could be found in[here](https://drive.google.com/file/d/1GdDZ1SvEqGin_zeCAGaJn0821vC_PJmc/view?usp=sharing)
 
 For the target dataset, one can download from [here](http://cvml.ist.ac.at/AwA2/). The link is [here](http://cvml.ist.ac.at/AwA2/AwA2-data.zip)
 
 The image list of the dataset should be edit to the path of images in 'data/new_AwA2.txt' and 'data/WEB_3D3_2.txt'
 
-###Model
+### Model
 The models could be calculated in UODTN, while we take the related models as follows:
 
 -["base_net_pretrained_on_I2AwA2_source_only"](https://drive.google.com/file/d/1FiHB8HV8U2Isfx0A6ipWEIaE4q-sekoO/view?usp=sharing) is a trained feature extractor for I2AwA.  
