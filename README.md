@@ -2,9 +2,9 @@
 code release for ["Towards Discriminability and Diversity: Batch Nuclear-norm Maximization under Label Insufficient Situations"]() ( CVPR2020 oral)
 
 ## One-sentence description
-We proved in the paper that Batch Nuclear-norm Maximization (BNM) could ensure the prediction discriminability and diversity, which is an effective conclusion under label insufficient situations.
+We prove in the paper that Batch Nuclear-norm Maximization (BNM) could ensure the prediction discriminability and diversity, which is an effective method under label insufficient situations.
 
-## Appilcation
+## Application
 
 ### Operation approach
 

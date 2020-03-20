@@ -1,5 +1,14 @@
 # BNM for UODR
 
+## Requirements
+The code is implemented with Python(3.6) and Pytorch(1.0.0).
+
+To install the required python packages, run
+
+```
+pip install -r requirements.txt
+```
+
 ## Dataset and Model
 Dataset and pretrained models could be calculated and found in [UODTN](https://github.com/junbaoZHUO/UODTN)
 
