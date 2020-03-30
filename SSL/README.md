@@ -1,4 +1,4 @@
-#BNM for SSL
+# BNM for SSL
 
 The codes could be downloaded from [Mixmatch](https://github.com/google-research/mixmatch)
 
