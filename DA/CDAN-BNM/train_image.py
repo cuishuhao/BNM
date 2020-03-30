@@ -205,7 +205,7 @@ def train(config):
         elif config["method"]=="BFM":
             method_loss = -torch.sqrt(torch.sum(s_tgt*s_tgt)/s_tgt.shape[0])
         elif config["method"]=="ENT":
-            method_loss = -torch.mean(torch.sum(softmax_tgt*torch.log(softmax_tgt+1e-8),dim=1))/torch.log(s_tgt.shape[1])
+            method_loss = -torch.mean(torch.sum(softmax_tgt*torch.log(softmax_tgt+1e-8),dim=1))/torch.log(softmax_tgt.shape[1])
         elif config["method"]=="NO":
             method_loss = 0
 

@@ -164,7 +164,7 @@ def train(config):
         elif config["method"]=="BFM":
             transfer_loss = -torch.sqrt(torch.sum(s_tgt*s_tgt)/s_tgt.shape[0])
         elif config["method"]=="ENT":
-            transfer_loss = -torch.mean(torch.sum(softmax_tgt*torch.log(softmax_tgt+1e-8),dim=1))/torch.log(s_tgt.shape[1])
+            transfer_loss = -torch.mean(torch.sum(softmax_tgt*torch.log(softmax_tgt+1e-8),dim=1))/torch.log(softmax_tgt.shape[1])
         total_loss = loss_params["trade_off"] * transfer_loss + classifier_loss 
 
         if i % config["print_num"] == 0:
