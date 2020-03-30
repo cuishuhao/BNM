@@ -1,4 +1,4 @@
-# BNM for DA
+# BNM for Domain Adaptation
 
 ## Dataset
 
