@@ -1,4 +1,4 @@
-# BNM for UODR
+# BNM for Unsupervised Open Domain Recognition
 
 ## Requirements
 The code is implemented with Python(3.6) and Pytorch(1.0.0).
@@ -10,12 +10,11 @@ pip install -r requirements.txt
 ```
 
 ## Dataset and Model
-Dataset and pretrained models could be calculated and found in [UODTN](https://github.com/junbaoZHUO/UODTN)
-
-While we directly take them.
+Dataset and pretrained models could be calculated and found in [UODTN](https://github.com/junbaoZHUO/UODTN),
+while we directly take them.
 
 ### Dataset
-the source dataset could be found in[here](https://drive.google.com/file/d/1GdDZ1SvEqGin_zeCAGaJn0821vC_PJmc/view?usp=sharing)
+The source dataset could be found in[here](https://drive.google.com/file/d/1GdDZ1SvEqGin_zeCAGaJn0821vC_PJmc/view?usp=sharing)
 
 For the target dataset, one can download from [here](http://cvml.ist.ac.at/AwA2/). The link is [here](http://cvml.ist.ac.at/AwA2/AwA2-data.zip)
 
