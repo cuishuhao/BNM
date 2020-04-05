@@ -311,6 +311,7 @@ if __name__ == "__main__":
     else:
         raise ValueError('Dataset cannot be recognized. Please define your own dataset here.')
 
+    seed = random.randint(1,10000)
     print(seed)
     torch.manual_seed(seed)
     torch.cuda.manual_seed(seed)
