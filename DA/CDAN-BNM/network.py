@@ -19,7 +19,7 @@ def init_weights(m):
         nn.init.normal_(m.weight, 1.0, 0.02)
         nn.init.zeros_(m.bias)
     elif classname.find('Linear') != -1:
-        nn.init.kaiming_normal_(m.weight)
+        nn.init.xavier_normal_(m.weight)
         nn.init.zeros_(m.bias)
 
 def zero_weights(m):
