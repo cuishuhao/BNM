@@ -33,22 +33,17 @@ Training instructions for DA, UODR and SSL are in the `README.md` in [DA](DA), [
 ## Citation
 If you use this code for your research, please consider citing:
 ```
-@article{cui2020nnm,
-	title={Towards Discriminability and Diversity: Batch Nuclear-norm Maximization under Label Insufficient Situations},
-	author={Cui, Shuhao and Wang, Shuhui and Zhuo, Junbao and Li, Liang and Huang, Qingming and Tian Qi},
-	journal={arXiv preprint arXiv:2003.12237},
-	year={2020} 
+@InProceedings{Cui_2020_CVPR,
+author = {Cui, Shuhao and Wang, Shuhui and Zhuo, Junbao and Li, Liang and Huang, Qingming and Tian, Qi},
+title = {Towards Discriminability and Diversity: Batch Nuclear-Norm Maximization Under Label Insufficient Situations},
+booktitle = {IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+month = {June},
+year = {2020}
 }
 ```
 Supplementary could be found in [Google driver](https://drive.google.com/file/d/15WOL2wFCSYVbPQfZ0OOSwtBXlcvgw8kA/view?usp=sharing)
  and [baidu cloud](https://pan.baidu.com/s/1eZAguvOXUOa0k_sietA8Zg) (z7yt).
  
-<!-- @inproceedings{cui2020bnm,
-  title={Towards Discriminability and Diversity: Batch Nuclear-norm Maximization under Label Insufficient Situations},
-  author={Cui, Shuhao and Wang, Shuhui and Zhuo, Junbao and Li, Liang and Huang, Qingming and Tian Qi},
-  booktitle={Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition},
-  year={2020}
-} -->
 ## Contact
 If you have any problem about our code, feel free to contact
 - hassassin1621@gmail.com
