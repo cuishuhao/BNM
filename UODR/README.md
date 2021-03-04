@@ -25,7 +25,7 @@ The models could be calculated in UODTN, while we take the related models as fol
 
 -["base_net_pretrained_on_I2AwA2_source_only"](https://drive.google.com/file/d/1FiHB8HV8U2Isfx0A6ipWEIaE4q-sekoO/view?usp=sharing) is a trained feature extractor for I2AwA.  
 
--["awa_50_cls_basic"](https://drive.google.com/file/d/1PD7Gm7OBxJLub8YNiELxLKq9WruSAAVH/view?usp=sharing) contains 50 initial classifiers for AwA2.  
+-["awa_50_cls_basic"](https://drive.google.com/file/d/1DLeCpM7-k1xBianFEmc3L6c9526WEha4/view?usp=sharing) contains 50 initial classifiers for AwA2.  
 
 These models should be put in the folder in "model/"
 
