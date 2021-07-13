@@ -1,12 +1,16 @@
 # BNM
 code release for ["Towards Discriminability and Diversity: Batch Nuclear-norm Maximization under Label Insufficient Situations"](https://arxiv.org/abs/2003.12237) ( CVPR2020 oral)
 
+Old version can be found in [BNM v1](https://github.com/cuishuhao/BNM/tree/BNMv1)
+
 ## One-sentence description
 We prove in the paper that Batch Nuclear-norm Maximization (BNM) could ensure the prediction discriminability and diversity, which is an effective method under label insufficient situations.
 
-## Application
+We further optimize BNM by Batch Nuclear-norm Minimization (BNMin) and Fast BNM.
 
-### One line code under Pytorch and Tensorflow
+## Application for BNM
+
+### One line code for BNM v1 under Pytorch and Tensorflow
 
 Assume `X` is the prediction matrix. We could calculate BNM loss in both Pytorch and Tensorflow, as follows:
  
@@ -24,6 +28,21 @@ L_BNM = -torch.sum(torch.svd(X, compute_uv=False)[1])
 ```
 L_BNM = -tf.reduce_sum(tf.svd(X, compute_uv=False))
 ```
+
+### code for Fast BNM (FBNM) under Pytorch
+Assume `X` is the prediction matrix. Then FBNM can be calculated as:
+```
+list_svd,_ = torch.sort(torch.sqrt(torch.sum(torch.pow(X,2),dim=0)), descending=True)
+nums = min(X.shape[0],X.shape[1])
+L_FBNM = - torch.sum(list_svd[:nums])
+```
+
+### Sum of Changes from BNM v1
+1. Fast BNM.(By approximation)
+2. BNMin.(On the other hand on source domain)
+3. Multiple BNM.(Multiple Batch Optimization)
+4. Balance domainnet.(New dataset)
+5. Semi-supervised DA.(New task)
 
 ### Tasks
 We apply BNM to domain adaptation (DA) in [DA](DA), unsupervised open domain recognition (UODR) in [UODR](UODR) and semi-supervised learning (SSL) in [SSL](SSL).
