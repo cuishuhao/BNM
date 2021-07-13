@@ -1,12 +1,12 @@
-# BNM
+# BNM v1 v2
 code release for ["Towards Discriminability and Diversity: Batch Nuclear-norm Maximization under Label Insufficient Situations"](https://arxiv.org/abs/2003.12237) ( CVPR2020 oral)
 
 Old version can be found in [BNM v1](https://github.com/cuishuhao/BNM/tree/BNMv1)
 
 ## One-sentence description
-We prove in the paper that Batch Nuclear-norm Maximization (BNM) could ensure the prediction discriminability and diversity, which is an effective method under label insufficient situations.
+BNM v1: we prove in the paper that Batch Nuclear-norm Maximization (BNM) could ensure the prediction discriminability and diversity, which is an effective method under label insufficient situations.
 
-We further optimize BNM by Batch Nuclear-norm Minimization (BNMin) and Fast BNM.
+BNM v2: we further devise Batch Nuclear-norm Minimization (BNMin) and Fast BNM.
 
 ## Application for BNM
 
