@@ -46,9 +46,9 @@ L_FBNM = - torch.sum(list_svd[:nums])
 5. - [ ] Semi-supervised DA.(New task)
 
 ### Applications
-We apply BNM to unsupervised domain adaptation (UDA) in [UDA](UDA), unsupervised open domain recognition (UODR) in [UODR](UODR) and semi-supervised learning (SSL) in [SSL](SSL).
+We apply BNM to unsupervised domain adaptation (UDA) in [DA](DA), unsupervised open domain recognition (UODR) in [UODR](UODR) and semi-supervised learning (SSL) in [SSL](SSL).
 
-Training instructions for UDA, UODR and SSL are in the `README.md` in [UDA](UDA), [UODR](UODR) and [SSL](SSL) respectively.
+Training instructions for UDA, UODR and SSL are in the `README.md` in [DA](DA), [UODR](UODR) and [SSL](SSL) respectively.
 
 ## Citation
 If you use this code for your research, please consider citing:
