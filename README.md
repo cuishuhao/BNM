@@ -39,10 +39,10 @@ L_FBNM = - torch.sum(list_svd[:nums])
 ```
 
 ### Sum of Changes from BNM v1 to BNM v2
-1. - [x] FBNM.(By approximation)
+1. - [x] [FBNM](https://github.com/cuishuhao/BNM/blob/master/DA/BNM/train_image.py#L167).(By approximation)
 2. - [ ] BNMin.(On the other hand on source domain)
 3. - [ ] Multiple BNM.(Multiple Batch Optimization)
-4. - [x] Balance domainnet.(New dataset)
+4. - [x] [Balance domainnet](https://github.com/cuishuhao/BNM/tree/master/DA/data/Balance_Domainnet).(New dataset)
 5. - [ ] Semi-supervised DA.(New task)
 
 ### Applications
