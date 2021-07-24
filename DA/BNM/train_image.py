@@ -158,10 +158,15 @@ def train(config):
 
         #loss calculation
         classifier_loss = nn.CrossEntropyLoss()(outputs_source, labels_source)
-        _, s_tgt, _ = torch.svd(softmax_tgt)
+        
         if config["method"]=="BNM":
+            _, s_tgt, _ = torch.svd(softmax_tgt)
             transfer_loss = -torch.mean(s_tgt)
+        elif config["method"]=="FBNM":
+            list_svd,_ = torch.sort(torch.sqrt(torch.sum(torch.pow(softmax_tgt,2),dim=0)), descending=True)
+            transfer_loss = - torch.mean(list_svd[:min(softmax_tgt.shape[0],softmax_tgt.shape[1])])
         elif config["method"]=="BFM":
+            _, s_tgt, _ = torch.svd(softmax_tgt)
             transfer_loss = -torch.sqrt(torch.sum(s_tgt*s_tgt)/s_tgt.shape[0])
         elif config["method"]=="ENT":
             transfer_loss = -torch.mean(torch.sum(softmax_tgt*torch.log(softmax_tgt+1e-8),dim=1))/torch.log(softmax_tgt.shape[1])
@@ -190,7 +195,7 @@ if __name__ == "__main__":
     parser.add_argument('--print_num', type=int, default=100, help="interval of two print loss")
     parser.add_argument('--num_iterations', type=int, default=6002, help="interation num ")
     parser.add_argument('--output_dir', type=str, default='san', help="output directory of our model (in ../snapshot directory)")
-    parser.add_argument('--method', type=str, default='BNM', help="Options: BNM, ENT, BFM")
+    parser.add_argument('--method', type=str, default='BNM', help="Options: BNM, ENT, BFM, FBNM")
     parser.add_argument('--lr', type=float, default=0.001, help="learning rate")
     parser.add_argument('--trade_off', type=float, default=1, help="parameter for transfer loss")
     parser.add_argument('--batch_size', type=int, default=36, help="batch size")
