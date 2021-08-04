@@ -70,6 +70,9 @@ year = {2020}
 Supplementary of BNM can be found in [Google driver](https://drive.google.com/file/d/15WOL2wFCSYVbPQfZ0OOSwtBXlcvgw8kA/view?usp=sharing)
  and [baidu cloud](https://pan.baidu.com/s/1eZAguvOXUOa0k_sietA8Zg) (z7yt).
  
+Supplementary of BNM2 can be found in [Google driver](https://drive.google.com/file/d/1jgumCIPJd8IR_b-ZsJoNybXj9vyrFpRz/view?usp=sharing)
+ and [baidu cloud](https://pan.baidu.com/s/1Xjg03truL9wN1wn4nq8U3g) (hbqc).
+ 
 [量子位](https://zhuanlan.zhihu.com/p/124860496)
 
 ## Contact
