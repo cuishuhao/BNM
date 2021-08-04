@@ -73,7 +73,10 @@ Supplementary of BNM can be found in [Google driver](https://drive.google.com/fi
 Supplementary of BNM2 can be found in [Google driver](https://drive.google.com/file/d/1jgumCIPJd8IR_b-ZsJoNybXj9vyrFpRz/view?usp=sharing)
  and [baidu cloud](https://pan.baidu.com/s/1Xjg03truL9wN1wn4nq8U3g) (hbqc).
  
+ ## Note
 [量子位](https://zhuanlan.zhihu.com/p/124860496)
+[BNM v1](https://zhuanlan.zhihu.com/p/121507249)
+[BNM v2](https://zhuanlan.zhihu.com/p/392678258）
 
 ## Contact
 If you have any problem about our code, feel free to contact
