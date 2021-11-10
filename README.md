@@ -1,6 +1,9 @@
 # Code Release for BNM v1 v2
+
+## Papers
 BNM v1 [Towards Discriminability and Diversity: Batch Nuclear-norm Maximization under Label Insufficient Situations](https://arxiv.org/abs/2003.12237) (CVPR2020 oral)
-and BNM v2 [Fast Batch Nuclear-norm Maximization and Minimization for Robust Domain Adaptation](https://arxiv.org/abs/2107.06154) (TPAMI under review)
+
+BNM v2 [Fast Batch Nuclear-norm Maximization and Minimization for Robust Domain Adaptation](https://arxiv.org/abs/2107.06154) (TPAMI under review)
 
 Clean code of BNM v1 can be found in [old version](https://github.com/cuishuhao/BNM/tree/BNMv1)
 
