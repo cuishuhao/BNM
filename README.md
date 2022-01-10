@@ -33,7 +33,7 @@ L_BNM = -torch.sum(torch.svd(X, compute_uv=False)[1])
 L_BNM = -tf.reduce_sum(tf.svd(X, compute_uv=False))
 ```
 
-### code for FBNM under Pytorch
+### Code for FBNM under Pytorch
 Assume `X` is the prediction matrix. Then FBNM can be calculated as:
 ```
 list_svd,_ = torch.sort(torch.sqrt(torch.sum(torch.pow(X,2),dim=0)), descending=True)
@@ -78,8 +78,10 @@ Supplementary of BNM2 can be found in [Google driver](https://drive.google.com/f
  
  ## Note
 [量子位](https://zhuanlan.zhihu.com/p/124860496)
+
 [BNM v1](https://zhuanlan.zhihu.com/p/121507249)
-[BNM v2](https://zhuanlan.zhihu.com/p/392678258）
+
+[BNM v2](https://zhuanlan.zhihu.com/p/392678258)
 
 ## Contact
 If you have any problem about our code, feel free to contact
